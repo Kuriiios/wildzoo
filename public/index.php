@@ -5,10 +5,27 @@
 
 require __DIR__ . '/../src/Animal.php';
 
-$animal1 = new Animal();
-$animal2 = new Animal();
+$lion = new Animal();
+$parrot = new Animal();
+$elephant = new Animal();
 
-$animals = [$animal1, $animal2];
+$lion->name = 'lion';
+$lion->size = 50;
+$lion->pawNumber = 4;
+$lion->carnivorous = true;
+$lion->threatenedLevel = 'VU';
+
+$parrot->name = 'parrot';
+$parrot->size = 10;
+$parrot->pawNumber = 2;
+$parrot->threatenedLevel = 'LC';
+
+$elephant->name = 'elephant';
+$elephant->size = 80;
+$elephant->pawNumber = 4;
+$elephant->threatenedLevel = 'CR';
+
+$animals = [$lion, $parrot, $elephant];
 
 /***************************************/
 /***************************************/
